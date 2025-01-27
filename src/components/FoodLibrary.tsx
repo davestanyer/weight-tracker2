@@ -45,7 +45,7 @@ export function FoodLibrary({ foods, onSelectFood, onEditFood, onDeleteFood, onA
               >
                 <div className="font-medium text-sm">{food.name}</div>
                 <div className="text-xs text-gray-500">
-                  {food.calories} kcal / {food.portion}
+                  {food.calories} calories / {food.portion}
                 </div>
               </div>
               <div className="flex gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -56,16 +56,4 @@ export function FoodLibrary({ foods, onSelectFood, onEditFood, onDeleteFood, onA
                   <Pencil className="w-3 h-3 text-gray-600" />
                 </button>
                 <button
-                  onClick={() => onDeleteFood(food.id)}
-                  className="p-1 hover:bg-gray-100 rounded"
-                >
-                  <Trash2 className="w-3 h-3 text-red-500" />
-                </button>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
+                  onClick={() => onDeleteF
